@@ -1,5 +1,6 @@
 package com.cydeo.step_definitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,6 +24,7 @@ public class Library_StepDefinitions {
         System.out.println("User sees dashboard");
     }
 
+
     @When("user enters student username")
     public void user_enters_student_username() {
         System.out.println("User enters student username");
@@ -32,4 +34,13 @@ public class Library_StepDefinitions {
         System.out.println("User enters student password");
     }
 
+    @When("user enters admin username")
+    public void userEntersAdminUsername() {
+        System.out.println("User enters admin username");
+    }
+
+    @And("user enters admin password")
+    public void userEntersAdminPassword() {
+        System.out.println("User enters admin password");
+    }
 }
