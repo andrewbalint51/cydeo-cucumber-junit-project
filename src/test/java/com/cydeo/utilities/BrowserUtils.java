@@ -4,9 +4,12 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class BrowserUtils {
@@ -76,5 +79,27 @@ public class BrowserUtils {
     public static void waitForTitleContains(String title){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
         wait.until(ExpectedConditions.titleContains(title));
+    }
+
+    /**
+     * This method returns a List of WebElements as a List of Strings
+     * @param dropdownElement
+     * @return
+     */
+
+    public static List<String> dropdownOptionsAsString(WebElement dropdownElement){
+
+        Select dropdown = new Select(dropdownElement);
+
+        List<WebElement> month_as_WEBELEMENT = dropdown.getOptions();
+
+        List<String> monthAs_STRING = new ArrayList<>();
+
+        for (WebElement each : month_as_WEBELEMENT) {
+            monthAs_STRING.add(each.getText());
+        }
+
+        return monthAs_STRING;
+
     }
 }
