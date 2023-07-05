@@ -115,5 +115,15 @@ public class BrowserUtils {
 
     }
 
+    public static void clickRadioButton(List<WebElement> radioButtons, String attributevalue){
+
+        for (WebElement each : radioButtons) {
+            if(each.getAttribute("value").equals(attributevalue)){
+                each.click();
+            }
+        }
+
+    }
+
 
 }

@@ -4,21 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="519d046e-9b5b-4341-9aab-ddd2f4b26dc5" name="Changes" comment="Cucumber day 3">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/R_VytrackDashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/R_VytrackLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/R_Vytrack_StepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/R_DataTablesExample.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/R_VytrackLogin.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/live_review_tasks/week5_liveReviewTasks" afterDir="false" />
+    <list default="true" id="519d046e-9b5b-4341-9aab-ddd2f4b26dc5" name="Changes" comment="Cucumber day 4">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/EtsySearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/ViewAllOrdersPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/WTBasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/WT_OrderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/WebTable_LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/EtsySearch_StepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/WebTable_StepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/EtsySearch.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/WebTableGeneral.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/WebTableLogin.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/BrowserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/R_VytrackLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/R_VytrackLogin.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber_reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber_reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cydeo/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cydeo/runners/CukesRunner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cydeo/utilities/BrowserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cydeo/utilities/BrowserUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/R_VytrackLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/R_VytrackLogin.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,14 +74,75 @@
   }
 }</component>
   <component name="RunManager" selected="JUnit.CukesRunner">
-    <configuration name="Feature: R_VytrackLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Etsy Search Functionality Title Verification (with parameterization)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/R_VytrackLogin.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EtsySearch.feature" />
       <option name="GLUE" value="com.cydeo.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cydeo-cucumber-junit-project" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: R_VytrackLogin" />
+      <option name="NAME_FILTER" value="^Etsy Search Functionality Title Verification \(with parameterization\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Etsy Search Functionality Title Verification \(with parameterization\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Etsy Search Functionality Title Verification (with parameterization)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Etsy Search Functionality Title Verification (without parameterization)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EtsySearch.feature" />
+      <option name="GLUE" value="com.cydeo.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="cydeo-cucumber-junit-project" />
+      <option name="NAME_FILTER" value="^Etsy Search Functionality Title Verification \(without parameterization\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Etsy Search Functionality Title Verification \(without parameterization\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Etsy Search Functionality Title Verification (without parameterization)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Order place scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/WebTableGeneral.feature" />
+      <option name="GLUE" value="com.cydeo.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="cydeo-cucumber-junit-project" />
+      <option name="NAME_FILTER" value="^Order place scenario$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Order place scenario$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Order place scenario" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Positive Login Scenario (with parameterization)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/WebTableLogin.feature" />
+      <option name="GLUE" value="com.cydeo.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="cydeo-cucumber-junit-project" />
+      <option name="NAME_FILTER" value="^Positive Login Scenario \(with parameterization\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Positive Login Scenario \(with parameterization\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Positive Login Scenario (with parameterization)" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -107,7 +172,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
-        <item itemvalue="Cucumber Java.Feature: R_VytrackLogin" />
+        <item itemvalue="Cucumber Java.Scenario: Order place scenario" />
+        <item itemvalue="Cucumber Java.Scenario: Positive Login Scenario (with parameterization)" />
+        <item itemvalue="Cucumber Java.Scenario: Etsy Search Functionality Title Verification (without parameterization)" />
+        <item itemvalue="Cucumber Java.Scenario: Etsy Search Functionality Title Verification (with parameterization)" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +195,7 @@
       <workItem from="1687815554726" duration="11000" />
       <workItem from="1687815571403" duration="19000" />
       <workItem from="1687815645455" duration="20774000" />
-      <workItem from="1688058139909" duration="21481000" />
+      <workItem from="1688058139909" duration="34785000" />
     </task>
     <task id="LOCAL-00001" summary="Cucumber day 2">
       <created>1688070955187</created>
@@ -150,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688307487105</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cucumber day 4">
+      <created>1688586419712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688586419712</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Cucumber day 4">
+      <created>1688586524566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688586524566</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +252,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cucumber day 2" />
     <MESSAGE value="Cucumber day 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cucumber day 3" />
+    <MESSAGE value="Cucumber day 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cucumber day 4" />
   </component>
 </project>
