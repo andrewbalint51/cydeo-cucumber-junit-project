@@ -61,7 +61,7 @@ public class BrowserUtils {
 
         String actualTitle = Driver.getDriver().getTitle();
 
-        Assert.assertEquals(actualTitle, expectedTitle);
+        Assert.assertEquals(expectedTitle, actualTitle);
     }
 
     public static void verifyTitleContains(String expectedInTitle){
@@ -102,4 +102,18 @@ public class BrowserUtils {
         return monthAs_STRING;
 
     }
+
+    public static List<String> webElementsAsString(List<WebElement> webElements){
+
+        List<String> elementsAs_STRING = new ArrayList<>();
+
+        for (WebElement each : webElements) {
+            elementsAs_STRING.add(each.getText());
+        }
+
+        return elementsAs_STRING;
+
+    }
+
+
 }

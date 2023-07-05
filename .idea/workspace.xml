@@ -4,25 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="519d046e-9b5b-4341-9aab-ddd2f4b26dc5" name="Changes" comment="Cucumber day 2">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/CydeoDropdowns.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/WikipediaHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/WikipediaResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/CydeoDropdown_StepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/DataTables_StepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/PetsStepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Wiki_StepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/CydeoDropdown.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DataTables.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/PetsWeLove.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/WikiSearch.feature" afterDir="false" />
+    <list default="true" id="519d046e-9b5b-4341-9aab-ddd2f4b26dc5" name="Changes" comment="Cucumber day 3">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/R_VytrackDashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/R_VytrackLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/R_Vytrack_StepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/R_DataTablesExample.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/R_VytrackLogin.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/live_review_tasks/week5_liveReviewTasks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/BrowserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/BingSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/BingSearch.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber_reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber_reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cydeo/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cydeo/runners/CukesRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/BingSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/BingSearch.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cydeo/utilities/BrowserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cydeo/utilities/BrowserUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +34,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///PageObject.java" root0="SKIP_INSPECTION" />
+    <setting file="mock:///Qa3VytrackUserLoginPage.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,7 +69,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CukesRunner">
+    <configuration name="Feature: R_VytrackLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/R_VytrackLogin.feature" />
+      <option name="GLUE" value="com.cydeo.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="cydeo-cucumber-junit-project" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: R_VytrackLogin" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cydeo-cucumber-junit-project" />
       <extension name="coverage">
@@ -88,8 +107,14 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Feature: R_VytrackLogin" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="Selenium" />
+    <option name="lastLanguageId" value="JAVA" />
+    <option name="lastUrl" value="https://qa3.vytrack.com/user/login" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -102,7 +127,7 @@
       <workItem from="1687815554726" duration="11000" />
       <workItem from="1687815571403" duration="19000" />
       <workItem from="1687815645455" duration="20774000" />
-      <workItem from="1688058139909" duration="13423000" />
+      <workItem from="1688058139909" duration="21481000" />
     </task>
     <task id="LOCAL-00001" summary="Cucumber day 2">
       <created>1688070955187</created>
@@ -111,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688070955187</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cucumber day 3">
+      <created>1688307453309</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688307453309</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cucumber day 3">
+      <created>1688307487105</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688307487105</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +169,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cucumber day 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cucumber day 2" />
+    <MESSAGE value="Cucumber day 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cucumber day 3" />
   </component>
 </project>
