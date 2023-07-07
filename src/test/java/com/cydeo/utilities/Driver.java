@@ -1,7 +1,9 @@
 package com.cydeo.utilities;
 
+import io.cucumber.java.sl.In;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
@@ -13,14 +15,14 @@ public class Driver {
 
     //private to close access outside of the class
     //Static so we can use in a static method
-    private static WebDriver driver;
+    private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
 
     /*
     Create reusable utility method that will return the same driver instance when we call it.
     If an instance doesn't exist, create it.
      */
     public static WebDriver getDriver(){
-        if(driver==null){
+        if(driverPool.get()==null){
             //We will read browser type from configuration.properties
             String browserType = ConfigurationReader.getProperty("browser");
 
@@ -31,28 +33,29 @@ public class Driver {
             switch (browserType){
                 case "chrome":
                     //WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
-                    driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                    driverPool.set(new ChromeDriver());
+                    driverPool.get().manage().window().maximize();
+                    driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
                 case "firefox":
                     //WebDriverManager.firefoxdriver().setup();
-                    driver = new ChromeDriver();
-                    driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                    driverPool.set(new FirefoxDriver());
+                    driverPool.get().manage().window().maximize();
+                    driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
 
             }
         }
 
-        return driver;
+        return driverPool.get();
     }
 
     public static void closeDriver(){
-        if(driver!=null){
+        if(driverPool.get()!=null){
             //terminate current existing driver completely
-            driver.quit();
+            driverPool.get().quit();
             //Assign value back to null
-            driver = null;
+            driverPool.remove();
         }
 
     }

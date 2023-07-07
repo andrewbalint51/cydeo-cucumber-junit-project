@@ -55,7 +55,7 @@ Feature: General functionality verifications
     And user enters street address "<street>"
     And user enters city "<city>"
     And user enters state "<state>"
-    And user enters zip "<zip>>"
+    And user enters zip "<zip>"
     #below was hard
     And user selects payment option "<paymentOption>"
     And user enters card number "<cardNo>"
